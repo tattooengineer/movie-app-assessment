@@ -1,0 +1,67 @@
+/* Movie List */
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background: #141414;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .movie-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 1rem);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .movie-card .movie-info {
+    padding: 1rem;
+  }
+  
+  .movie-card .movie-info h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .movie-card .movie-info p {
+    margin: 0.5rem 0 0;
+    color: #666;
+  }
+  
+  @media (max-width: 1200px) {
+    .movie-card {
+      width: calc(33.333% - 1rem);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .movie-card {
+      width: calc(50% - 1rem);
+    }
+    .search-bar input {
+      width: 100%;
+    
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movie-card {
+      width: 100%;
+    }
+  }
